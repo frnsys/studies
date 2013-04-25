@@ -9,7 +9,7 @@ A very simple bouncer jQuery plugin, mainly for use in my own projects.
 Bouncer will create a bouncing ball. Or, you can bounce whatever element you
 like.
 
-Basic demo available [here](http://supermedes.com/labs/bouncer/).
+Basic demo available [here](http://supermedes.com/labs/studies/bouncer/).
 
 ### Usage:
 ```javascript
@@ -43,7 +43,7 @@ When you initialize the bouncer, you can pass some parameters:
 
 A very simple slider jQuery plugin, mainly for use in my own projects.
 
-Basic demo available [here](http://supermedes.com/labs/sliders/).
+Basic demo available [here](http://supermedes.com/labs/studies/sliders/).
 
 
 ## Counter
@@ -52,7 +52,7 @@ A very simple counting jQuery plugin, mainly for use in my own projects.
 Counter will take an element with a number in it and count to a target
 value.
 
-Basic demo available [here](http://supermedes.com/labs/counter/).
+Basic demo available [here](http://supermedes.com/labs/studies/counter/).
 
 ### Usage:
 ```javascript
@@ -70,4 +70,4 @@ A very simple jQuery plugin, mainly for use in my own projects. It fades
 out (conceals) or fades in (reveals) an element, but uses `visibility`
 instead of `display`.
 
-Basic demo available [here](http://supermedes.com/labs/concealer/).
+Basic demo available [here](http://supermedes.com/labs/studies/concealer/).
