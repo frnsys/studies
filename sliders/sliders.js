@@ -1,5 +1,5 @@
 /*!
- * Sliders 0.0.2
+ * Sliders 0.0.3
  *
  * Copyright 2013 Francis Tseng (@frnsys / frnsys.com)
  * Released under the MIT License
@@ -17,11 +17,11 @@
 	'use strict'
 
 	$.fn.extend({
-		slider: function( el, o ) {
+		slider: function( o ) {
 			return this.each( function() {
 				var self = $(this);
 				if (self.data("slider")) return;
-				self.data("slider", new Slider( self, el, o ));
+				self.data("slider", new Slider( self, o ));
 			});
 		}
 	});
@@ -37,7 +37,7 @@
 		speed: 500
 	}
 
-	function Slider( container, el , o ) {
+	function Slider( container, o ) {
 		var s = this;
 
 		// Private
