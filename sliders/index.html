@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sliders</title>
+  <script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="sliders.js"></script>
+	<script>
+		$(function() {
+			slider = $("#slider").slider();
+
+			$(".next").on("click", function() {
+				slider.data("slider").next();
+			});
+			$(".prev").on("click", function() {
+				slider.data("slider").prev();
+			});
+		});
+	</script>
+	<style>
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		}
+		#slider {
+			background:#47C0B2;
+			height:100% !important;
+		}
+		h1 {
+			text-align:center;
+			font-size:8em;
+			color:#DD4343;
+			text-shadow:4px 4px rgba(0,0,0,0.2);
+			margin:0;
+			padding:2em;
+		}
+		.actions {
+			position:absolute;
+			z-index:100;
+			width:100%;
+			text-align:center;
+			padding:1em 0;
+			left:0;
+			top:0;
+		}
+		button {
+			background:rgba(0,0,0,0.2);
+			border:none;
+			padding:1em 2em;
+			color:#fff;
+			cursor:pointer;
+		}
+		button:hover {
+			background:rgba(0,0,0,0.4);
+		}
+	</style>
+</head>
+<body>
+
+<div class="actions">
+	<button class="prev" type="button">Prev</button>
+	<button class="next" type="button">Next</button>
+</div>
+
+
+<div id="slider">
+	<section>
+		<h1>1</h1>
+	</section>
+
+	<section>
+		<h1>2</h1>
+	</section>
+
+	<section>
+		<h1>3</h1>
+	</section>
+
+	<section>
+		<h1>4</h1>
+	</section>
+</div>
+
+</body>
+</html>

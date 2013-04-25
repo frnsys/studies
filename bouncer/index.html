@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bouncer</title>
+  <script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="bouncer.js"></script>
+	<script>
+		$(function() {
+			bouncer = $("#bouncer").bouncer();
+			bouncer.bounce();
+		});
+	</script>
+	<style>
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+			background:#723897;
+		}
+		#bouncer {
+			background:#55e0b7;
+			width:40px;
+			height:40px;
+			margin:0 auto;
+			border-radius:20em;
+			box-shadow:inset -4px -4px #42c69f;
+		}
+	</style>
+</head>
+<body>
+
+<div id="bouncer"></div>
+
+</body>
+</html>

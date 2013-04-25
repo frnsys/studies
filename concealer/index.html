@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concealer</title>
+  <script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="concealer.js"></script>
+	<script>
+		$(function() {
+			$(document).on("click", ".conceal", function() {
+				$("#target").conceal();
+				$(this).removeClass("conceal").addClass("reveal").text("Reveal");
+			});
+			$(document).on("click", ".reveal", function() {
+				$("#target").reveal();
+				$(this).removeClass("reveal").addClass("conceal").text("Conceal");
+			});
+		});
+	</script>
+	<style>
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+			background:#154570;
+		}
+		ul {
+			margin:6em auto;
+			list-style-type:none;
+			text-align:center;
+			padding:0;
+		}
+		ul li {
+			width:6em;
+			height:4em;
+			margin:0 1em;
+			background:#DD4343;
+			box-shadow:4px 4px rgba(0,0,0,0.2);
+			display:inline-block;
+		}
+		.actions {
+			position:absolute;
+			z-index:100;
+			width:100%;
+			text-align:center;
+			padding:1em 0;
+			left:0;
+			top:0;
+		}
+		button {
+			background:rgba(0,0,0,0.2);
+			border:none;
+			padding:1em 2em;
+			color:#fff;
+			cursor:pointer;
+		}
+		button:hover {
+			background:rgba(0,0,0,0.4);
+		}
+	</style>
+</head>
+<body>
+
+<div class="actions">
+	<button class="conceal" type="button">Conceal</button>
+</div>
+
+<ul>
+	<li></li>
+	<li id="target"></li>
+	<li></li>
+</ul>
+
+</body>
+</html>

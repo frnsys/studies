@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter</title>
+  <script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="counter.js"></script>
+	<script>
+		$(function() {
+			countDown( $("#counter") );
+
+			function countDown( counter ) {
+				$(counter).counter( 0, function() {
+					countUp( $(this) );
+				});
+			}
+			function countUp( counter ) {
+				$(counter).counter( 100, function() {
+					countDown( $(this) );
+				});
+			}
+		});
+	</script>
+	<style>
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+			background:#4CDCE2;
+			font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+		}
+		h1 {
+			text-align:center;
+			font-size:8em;
+			color:#DD4343;
+			text-shadow:4px 4px rgba(0,0,0,0.2);
+			margin:0;
+			padding:2em;
+		}
+	</style>
+</head>
+<body>
+
+<h1 id="counter">100</h1>
+
+</body>
+</html>
