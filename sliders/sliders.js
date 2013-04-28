@@ -165,7 +165,7 @@
 			return s;
 		},
 		s.play = function() {
-			if ( s.opts.interval > 0 ) {
+			if ( s.slides.length > 1 && s.opts.interval > 0 ) {
 				var interval = s.opts.interval > s.opts.speed ? s.opts.interval : s.opts.speed;
 				s.interval = setInterval(s.next, interval);
 			}
