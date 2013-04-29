@@ -71,3 +71,12 @@ out (conceals) or fades in (reveals) an element, but uses `visibility`
 instead of `display`.
 
 Basic demo available [here](http://supermedes.com/labs/studies/concealer/).
+
+
+## Scriber
+
+A very simple "rich"-editing textarea. It will insert some relevant HTML
+tags, though it does not actually render out rich text.
+
+Basic demo available
+[here](http://supermedes.com/labs/studies/scriber/).

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scriber</title>
+  <script type="text/javascript" src="../jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="scriber.js"></script>
+	<script>
+		$(function() {
+			$("textarea").focus();
+			$("#scriber").scriber();
+		});
+	</script>
+	<style>
+		* {
+			-moz-box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		html, body {
+			margin:0;
+			padding:0;
+			height:100%;
+			background:#A5E2BD;
+			font-family:"Arial", "Helvetica Neue", sans-serif;
+		}
+		#scriber {
+			width:60em;
+			margin:4em auto 2em auto;
+		}
+		textarea {
+			max-width:100%;
+			width:100%;
+			height:40em;
+			max-height:40em;
+			height:20em;
+			display:block;
+			border:none;
+			background:rgba(255,255,255,0.3);
+			color:#333;
+			padding:2em;
+			font-size:1em;
+		}
+		ul {
+			list-style-type:none;
+			padding:0;
+			margin:0;
+			overflow:hidden;
+		}
+		li {
+			float:left;
+			width:25%;
+			text-align:center;
+			padding:1em;
+			background:#F35656;
+			color:#fff;
+			font-size:1.2em;
+			cursor:pointer;
+		}
+		li:hover {
+			background:#F14949;
+		}
+		.prompt {
+			display:none;
+			background:#F14949;
+			padding:1em;
+			text-align:center;
+		}
+		input[type=text] {
+			border:none;
+			background:#fff;
+			color:#111;
+			padding:0.5em 1em;
+			font-size:1.1em;
+		}
+		.upload {
+			border:none;
+			color:#fff;
+			padding:0.8em 1em;
+			cursor:pointer;
+			background:#D13838;
+			display:inline-block;
+			font-size:0.9em;
+		}
+	</style>
+
+	<link rel="stylesheet" href="icons.css">
+</head>
+<body>
+
+<div id="scriber">
+	<ul class="controls">
+		<li class="control__bold"><span class="icon-bold"></span></li>
+		<li class="control__italic"><span class="icon-italic"></span></li>
+		<li class="control__link"><span class="icon-link"></span></li>
+		<li class="control__image"><span class="icon-photo"></span></li>
+	</ul>
+	<div class="prompt">
+		<input type="text" placeholder="Enter your link." class="input__link">
+		<input type="file" class="input__image">
+		<div class="upload">Upload</div>
+	</div>
+	<textarea>
+		It has come to my attention that in certain circles, simian-minded individuals are refering to vidcons as 'vid cons', ignorantly placing a space between 'vid' and 'con'. Perhaps their brains have dulled by years of Madden and Quake, rather than the mentally invigorating games such as Arc the Lad and Growlanser, becuase even a child could tell that placing a space between the 'vid' and 'con' in vidcon is perhaps more profoundly philistine than a certain American administration that need not be named. Placing a space in vidcon completely belittles the meaning of the word and displays the user's blatantly minuscule intellect and is understanding of the basic precepts of grammar. Vidcon is a perfect marriage of the words console and video game, creating a short and effective portmanteau that quickly and accurately labels mentions objects and anybody who does not immediately recognize 'vid con' as absolutely outrageous clearly lacks the mental faculties to correctly operate a vidcon other than perhaps FIFA Sports. I make this point becuase I have recently been belligerently barrage by imbecilic 'vid con' references that unnerve me to no end and have taken it upon myself to correct the damage that your poor Western education ( though this is a subject to be discussed on a later date) has wrought upon you. You should personally thank me that i did not see it fit to correct your preponderous mistake in Japanese, becuase I am thoroughly positive your neanderthal mind would be incapable of deciphering the Hiragana from the Katakana.
+	</textarea>
+</div>
+
+</body>
+</html>
