@@ -11,8 +11,7 @@ Suggested usage would be something like:
 
 HTML
 ```html
-    <a href="https://www.youtube.com/watch?v=-ChppfnazzE"
-    data-video="true">
+    <a href="https://www.youtube.com/watch?v=-ChppfnazzE" data-video="true">
 ```
 
 Javascript
