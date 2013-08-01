@@ -11,6 +11,7 @@ Suggested usage would be something like:
 
 HTML
 ```html
+    <div class="overlay"></div>
     <a href="https://www.youtube.com/watch?v=-ChppfnazzE" data-video="true">
 ```
 
